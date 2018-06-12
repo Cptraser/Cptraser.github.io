@@ -1,3 +1,5 @@
+### CSUOJ1216异或最大值
+
 [题目传送门](http://acm.csu.edu.cn/csuoj/problemset/problem?pid=1216)
 
 过了好久，终于重新开始写博客了。。。
@@ -49,3 +51,4 @@ int main()
     return 0;
 }
 ```
+[贪心]: 
