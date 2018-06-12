@@ -27,3 +27,69 @@
 
 
 [**Educational Codeforces Round 2 E**](http://codeforces.com/contest/600/problem/E)
+
+```c++
+#include <cstdio>
+#include <vector>
+using namespace std;
+long long read(){
+	char c;while(c=getchar(),c<'0'||c>'9');
+	long long x=c-'0';while(c=getchar(),c>='0'&&c<='9')x=x*10+c-'0';
+	return x;
+}
+
+const int Maxn=1e5+5;
+long long N,C[Maxn];
+vector<long long>A[Maxn];
+long long Sz[Maxn],f[Maxn],Son[Maxn];
+void dfs1(long long Node,long long fa){
+	Sz[Node]=1,f[Node]=fa;
+	for(int i=0;i<A[Node].size();i++){
+		if(A[Node][i]!=fa){
+			dfs1(A[Node][i],Node);
+			Sz[Node]+=Sz[A[Node][i]];
+			if(Sz[Son[Node]]<Sz[A[Node][i]])
+				Son[Node]=A[Node][i];
+		}
+	}
+}
+long long vis[Maxn],Mx=0,Ans[Maxn],Cnt[Maxn],Sum=0;
+void G(long long Node,long long v){
+	Cnt[C[Node]]+=v;
+	if(v>0&&Cnt[C[Node]]>=Mx){
+		if(Cnt[C[Node]]>Mx)Sum=0,Mx=Cnt[C[Node]];
+		Sum+=C[Node];
+	}
+	for(int i=0;i<A[Node].size();i++){
+		if(!vis[A[Node][i]]&&f[Node]!=A[Node][i]){
+			G(A[Node][i],v);
+		}
+	}
+}
+void dfs2(long long Node,long long Cl){
+	for(int i=0;i<A[Node].size();i++){
+		if(A[Node][i]!=f[Node]&&A[Node][i]!=Son[Node])
+			dfs2(A[Node][i],0);
+	}
+	if(Son[Node])dfs2(Son[Node],1),vis[Son[Node]]=1;
+	G(Node,1);Ans[Node]=Sum;
+	if(Son[Node])vis[Son[Node]]=0;
+	if(!Cl)G(Node,-1),Mx=Sum=0;
+}
+
+int main()
+{
+	N=read();
+	for(int i=1;i<=N;i++)C[i]=read();
+	for(int i=1;i<N;i++){
+		int x=read(),y=read();
+		A[x].push_back(y);
+		A[y].push_back(x);
+	}
+	dfs1(1,0);
+	dfs2(1,0);
+	for(int i=1;i<=N;i++)printf("%lld ",Ans[i]);
+	return 0;
+}
+```
+
