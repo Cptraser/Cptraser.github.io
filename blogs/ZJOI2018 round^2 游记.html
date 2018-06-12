@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ZJOI2018 round^2 游记</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>ZJOI2018 round^2 游记</h1>
+<h2>Day^0</h2>
+<p>一早起来6点左右，吃完早饭去班里拿了书包就来机房，说实话怕被打[手动滑稽]。</p>
+<p>在车上大约经历了3个半小时的车程，终于到达了目的地：余姚。当然基本上大家的设备电量都不多了，除了某些上车睡觉的大佬。</p>
+<p>在车上吃了好多东西，such as瓜子之类的东西当然没少吃。</p>
+<p>下车时出现重大失误！身份证落在车上了。</p>
+<p>下午到宾馆后我们开了个会，说明了省选期间的纪律问题，当然还是膜AntiQuality。</p>
+<p>接下来要好好吐槽一下宾馆。</p>
+<p>首先是厕所和澡间某些奥妙重重的“透明化”，TMD澡间和厕所的玻璃是透明的！！</p>
+<p>额晚上和StevenSonson、AntiQuality、CHJ大佬们出去吃骚烤、啃面包。</p>
+<p>不得不说还是吃得挺好的。</p>
+<h2>Day^1</h2>
+<p>早上7点左右突然醒来（毫无征兆），StevenSonson跟我说我的手机闹铃响过了。</p>
+<p>哈？响过了？！还好是7点。</p>
+<p>洗完脸刷完牙下去又买了白吐司啃一啃。</p>
+<p>早上依旧是惯例的大佬讲课，这次是学军中学的陈博涵巨佬。</p>
+<p>讲了一些做最大强连通子图的知识并讲了一些例题。</p>
+<p>巨佬不愧是巨佬，说话都这么清奇。赶快膜一波。%%%%%%。</p>
+<p>中午在一个叫 <em>犟骨饭</em>  的店里（强行插播广告）吃饭，17元，还不错。</p>
+<p>下午也是学军中学的大佬，毛嘉怡大佬。%%%。</p>
+<p>刚开始讲了一些Dfs的例题，Topcoder里的。</p>
+<p>后来讲的题目就有些难懂了。</p>
+<p>晚上在试机的地方（社区大学）敲了一下代码，键盘还不错，手感还可以，但值得吐槽的是电脑开机速度极慢。</p>
+<h2>Day^2</h2>
+<p>早上起来被StevenSonson抛弃了，他和Cjj出去吃早饭了，抛下我在宾馆里，QwQ。。。。</p>
+<p>然后膜AntiQuality大佬，感谢他给我带了一个煎饼果子。</p>
+<p>早上是冬火可怜大佬和陈嘉乐大佬讲杂题，~~不得不说还是很毒瘤的~~。</p>
+<p>题目基本就是刚开始听得懂一点，后来就渐渐听不懂了。</p>
+<p>中午跟随JYZ、WJN等学长出去吃饭，吃面，还可以。</p>
+<p>下午是Skylee大佬讲课，好吧我承认又是毒瘤。</p>
+<p>之后又是什么高校的宣讲。</p>
+<p>明天就是省选考试了，要早点睡，省选加油！</p>
+<h2>Day^3</h2>
+<p>早上考试非常难，第一题就原地爆炸，打了两个多小时的爆搜，TMD错了。。。无奈只好打表。</p>
+<p>T2打了个暴力，看看时间还可以就算了，T3好像直接输3就有十分，但当时没时间就没输。</p>
+<p>但是社区大学的电脑调试好像有点问题？？！调试时光标会乱跳：上下乱跳的那种。</p>
+<p>下午经过了3个半小时的车程回到衢州，还是感慨万分。</p>
+<p>我好弱啊，膜大佬们。%%%。</p>
+<p>恭喜家宁学姐夺得$round^2$Rank1并取得省队第九的好成绩。</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
