@@ -315,11 +315,11 @@ p.infopost a {
 	background:#e8e8e8 url(../images/fbg_bg.gif) repeat-x left top;
 }
 .fbg_resize {
-	margin:0 auto;
-	width:920px;
+	width:1330px;
 	padding:16px 20px;
 	background:#f3f5f4 url(../images/fbg_rs.gif) repeat-x left top;
 	color:#6e6e6e;
+	margin:0 auto;
 }
 .fbg h2 {
 	color:#3f3f3f;
@@ -333,11 +333,17 @@ p.infopost a {
 }
 .fbg .col {
 	margin:0;
-	float:left;
+	float:right;
+	width: auto;
 }
 .fbg .c1 {
-	padding:0 16px 0 0;
-	width:280px;
+	width:300px;
+	float: none;
+	padding-top: 0;
+	padding-right: 0px;
+	padding-bottom: 0;
+	padding-left: 0;
+	text-align: left;
 }
 .fbg .c2 {
 	padding:0 36px 0 16px;
