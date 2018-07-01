@@ -121,9 +121,9 @@ int main()
 
 ·前缀和
 
-![sumx](F:\Website\Github\Cptraser.github.io\blogs\pic\sumx.png)
+![sumx](\\pic\sumx.png)
 
-![sumy](F:\Website\Github\Cptraser.github.io\blogs\pic\sumy.png)
+![sumy](\\pic\sumy.png)
 
 将问题转化为以上两张图，求出前缀和即可$O(N^2)$求出答案。
 
