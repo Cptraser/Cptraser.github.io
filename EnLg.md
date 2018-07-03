@@ -33,3 +33,35 @@ $suffocate$$[ˈsʌfəkeɪt]$$vt.$&$vi.$（使某人）窒息而死，（将某�
 
 **__**$from$ "$Deception$" $First$ $senson$，$ninth$ $episode$
 
+***
+
+$strain$$[streɪn]$$n.$血统，家族；$vt.$拉紧，拽紧或扯进；$vi.$不懈，拉紧、紧绷
+
+$senator$$[ˈsenətə(r)]$$n.$参议员
+
+$fiend$$[fi$:$nd]$$n.$魔鬼，...迷、...狂（同$fan$）；$adj.$魔鬼似的
+
+$proof$$[pru:f]$$n.$证明；$adj.$防...的，抗...的，能抵御；$vt.$给（织物）做防护处理，使防水（或防火等）；$vi.$[印刷术]校对，发酵。
+
+> ~($of$ $sth/that...$)$n.$证据，证明
+>
+> > $Can$ $you$ $provide$ $any$ $proof$ $of$ $identity?$
+> >
+> > 你能提供什么身份证明吗 ?
+
+> ~$again$ $sth$ （$formal$）$adj.$能抵御；能防范；可防护
+>
+> > $The$ $sea$ $wall$ $was$ $not$ $proof$ $against$ $the$ $strength$ $of$ $the$ $waves.$
+> >
+> > 防波堤挡不住海浪的力量。
+
+$fuse$$[fju$:$z]$$vi.$融合，熔化；$vt.$使融合，使融化；$n.$保险丝，引信，导火线
+
+$tune$$[tju$:$n]$$n.$曲调、曲子，和谐，语调，心情；$vt.$调整，使和谐；$vi.$协调
+
+$conspiracy$$[kənˈspɪrəsi]$$n.$阴谋
+
+$expose$$[ɪk'spəʊz]$$vt.$揭露，揭发，使曝光
+
+**__**$from$ "$Deception$" $First$ $senson$，$tenth$ $episode$
+
